@@ -1,0 +1,177 @@
+@font-face{
+	src: url(/Projeto_01/fonts/Open_Sans/OpenSans.ttf);
+	font-family: "Open Sans";
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+header#top{
+	height: 80px;
+	background-color:rgb(5, 5, 151);
+	display: flex;
+	align-items: center;
+}
+
+header#top > span{
+	font-size: 28px;
+	margin-left: 50px;
+	font-weight: bold;
+}
+
+section#conteudo-princ{
+	height: 80vh;
+	background-image: url(/Projeto_01/images/header_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+section#conteudo-princ > div.descricao{
+	background-color: rgba(111, 167, 240, 0.253);
+	width: 600px;
+	padding: 30px;
+	color: #fff;
+}
+
+div.descricao > ul > li{
+	margin-bottom: 20px;
+}
+
+section#conteudo-princ > div.formulario{
+	background-color: rgb(203, 243, 247);
+	width: 400px;
+	height: 630px;
+	padding: 10px;
+	border: 10px solid rgba(125,125,125,0.5);
+	background-clip: padding-box;
+}
+
+form > div.input-container{
+	width: 95%;
+	margin: auto;
+}
+
+div.formulario > h2{
+	margin-bottom:50px;
+}
+
+form > div.input-container > input[type=text], input[type=email], input[type=tel]{
+	width: 100%;
+	padding: 10px;
+	margin:0px auto 40px auto;
+	font-size: 16px;
+}
+
+form > button[type=submit]{
+	padding: 10px 60px;
+	background-color: rgb(44, 87, 206);
+	margin: auto;
+	display: block;
+	font-size: 26px;
+	color: #fff;
+}
+
+section#conteiner2{
+	background-color: #ccc;
+	padding: 10px;
+	text-align: center;
+}
+
+section#conteiner2 > h2{
+	margin:20px 0px 20px;
+}
+
+section#conteiner2 > img{
+	width: 60px;
+	position: relative;
+	bottom: -40px;
+	/* no valor bottom é pq o conteiner tem um padding de 10px margin 20px e a imagem é 60px então é preciso retirar o padding a margin e metade da imagem para ela ficar no meio*/
+
+}
+
+section#section-container3{
+	padding: 10px;
+	width: 80%;
+	margin: auto;
+	
+}
+
+section#section-container3 > h2{
+	text-align: center;
+	margin: 50px auto;
+}
+
+section#section-container3 > div.container-single{
+	display: inline-block;
+	width: calc(100%/3);
+	text-align: center;
+	margin-left:-4px;
+}
+
+div.container-section > h2{
+	margin: 20px auto;
+}
+
+footer{
+	border-top: 3px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+	header#top{
+		justify-content: center;
+	}
+
+	section#conteudo-princ{
+		flex-direction: column;
+		height: auto;
+		padding: 50px;
+		
+	}
+
+	section#conteudo-princ > div.formulario{
+		margin-top: 50px;
+	}
+
+	section#section-container3{
+		width:100%;
+		padding: 10px;
+	}
+	section#section-container3 > div.container-single{
+		width: 40%;
+		margin-left: 7%;
+	}
+
+	section#section-container3 > div.container-single:last-of-type{
+		margin:30px auto;
+		display: block;
+	}
+
+
+}
+
+@media screen and (max-width: 760px){
+	section#conteudo-princ > div.descricao{
+		display: block;
+		width: 100%;
+	}
+ 
+	section#section-container3 > div.container-single{
+		display: block;
+		margin:50px auto;
+		width: 98%;
+	}
+	
+
+	
+}
+
